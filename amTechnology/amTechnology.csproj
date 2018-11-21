@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2ACCFFE6-ABC6-41B7-8AA2-114F154ACA22}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>amTechnology</RootNamespace>
+    <AssemblyName>amTechnology</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>amtech_logo_qxY_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E4F654D4C2B5C02A8F7CBFEC653989F7BD19724D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>amTechnology_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>G:\Softwares\PROGRAMING\visual basic 2010 full from cd\bunifu dll\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BD_FoodDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_FoodDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_FoodDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_FoodDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="breakFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="breakFrm.Designer.cs">
+      <DependentUpon>breakFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerFrm.Designer.cs">
+      <DependentUpon>CustomerFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employees.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EmployeesFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesFrm.Designer.cs">
+      <DependentUpon>EmployeesFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employeesRFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeesRFrm.Designer.cs">
+      <DependentUpon>employeesRFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrm.Designer.cs">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainF.Designer.cs">
+      <DependentUpon>MainF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productFrm.Designer.cs">
+      <DependentUpon>productFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductRpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductRpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProductRptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductRptForm.Designer.cs">
+      <DependentUpon>ProductRptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="breakFrm.resx">
+      <DependentUpon>breakFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerFrm.resx">
+      <DependentUpon>CustomerFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Employees.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesFrm.resx">
+      <DependentUpon>EmployeesFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeesRFrm.resx">
+      <DependentUpon>employeesRFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrm.resx">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainF.resx">
+      <DependentUpon>MainF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productFrm.resx">
+      <DependentUpon>productFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProductRpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductRptForm.resx">
+      <DependentUpon>ProductRptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="amTechnology_TemporaryKey.pfx" />
+    <None Include="app.config" />
+    <None Include="BD_FoodDataSet.xsc">
+      <DependentUpon>BD_FoodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD_FoodDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_FoodDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_FoodDataSet.xss">
+      <DependentUpon>BD_FoodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD_FoodDataSet1.xsc">
+      <DependentUpon>BD_FoodDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BD_FoodDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_FoodDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_FoodDataSet1.xss">
+      <DependentUpon>BD_FoodDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Erase_32464.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Erase_105247.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_minus_1303882.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_close_36466.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2996567-gradient-soft-gradient___mixed-wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amTech logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amTechWhiteLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_1_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_green_2_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_1_2-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_fewer_7697.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_14_61385.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 1-80.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_coffee-cup_34650.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="amtech_logo_qxY_icon.ico" />
+    <None Include="Resources\if_WLM_32606.ico" />
+    <None Include="Resources\if_WLM_32606.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
